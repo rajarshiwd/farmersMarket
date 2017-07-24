@@ -1,0 +1,55 @@
+
+<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:forestgreen;margin-top:0px;">
+  
+
+  <div class="container-fluid">
+    
+    
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+  <a><img src="https://previews.123rf.com/images/angkritth/angkritth1509/angkritth150900178/45203116-Rice-combine-harvester-farm-vector-illustration-Stock-Vector-rice-cartoon.jpg" width="50px" height="50px" ></a>
+      <a class="navbar-brand" routerLink="/" style="color:white">FarmersMarket</a>
+      
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar" >
+        <ul class="nav navbar-nav" >
+          
+          <li><a routerLink="/market" >Market Prices</a></li>
+          <li><a routerLink="/contact"  >Contact Us</a></li>
+          <li><a routerLink="help" >Help</a></li>
+         
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" routerLink="#">Internships<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a routerLink="#section41">Mechanical</a></li>
+              <li><a routerLink="#section42">Electrical</a></li>
+              <li><a routerLink="#section42">Computer Science</a></li>
+            </ul>
+          </li>
+        </ul>
+         <form class="navbar-form navbar-left">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+         <ul class="nav navbar-nav navbar-right">
+      <li *ngIf="!isLoggedIn" ><a routerLink="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li *ngIf="isLoggedIn"><a (click)="logout()"><span class="glyphicon glyphicon-off"></span>Logout</a></li>
+    </ul>
+      </div>
+    </div>
+  </div>
+</nav>  
+
+
+ 
+    
+    
+  
+      <router-outlet></router-outlet>
+   

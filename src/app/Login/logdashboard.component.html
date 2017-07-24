@@ -1,0 +1,43 @@
+
+<div class = "container">
+
+    <div class="well well-lg row">
+        
+        <div class="panel-group col-xs-12" >
+         <div class="panel panel-primary">
+      <div class="panel-heading" style="text-align:center;background-color:ForestGreen " >Login Panel</div>
+      
+<div class="panel-body col-lg-12" >
+
+<div class = "col-lg-0" >
+
+<h3 style="color:green;"> FARMER'S<b style="color:DarkGreen  ">MARKET</b></h3>
+</div>
+    <div class = "col-lg-4" style="margin-left: -25px;" id ="large">
+
+    <a [routerLink]="['/login','admin']" class="btn btn-primary btn-block" style="background-color:ForestGreen " routerLinkActive="active"> Admin</a>
+     <a  [routerLink]="['/login','manager']" class="btn btn-primary btn-block" style="background-color:ForestGreen " routerLinkActive="active">Manger</a>
+     <a [routerLink]="['/login','user']"  class="btn btn-primary btn-block" style="background-color:ForestGreen " routerLinkActive="active" >Client</a>
+
+
+    </div>
+
+
+    <div class = "col-xs-8">
+       
+<router-outlet></router-outlet>
+
+    </div>
+
+
+
+
+    </div>
+
+        </div>
+</div>
+       
+                
+            </div>
+
+    </div>
