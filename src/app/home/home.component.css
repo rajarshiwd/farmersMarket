@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media (max-width: 768px) { 
 .space{
 
@@ -155,3 +156,162 @@ padding:15px;
   #section5 {height:150px;color: #F0FFF0; background-color:#696969;opacity:1}
 			
       
+=======
+@media (max-width: 768px) { 
+.space{
+
+padding:0px;
+
+      }
+  .percentage{
+    color:forestgreen;
+    font-size: 30px;
+  }
+	
+
+	.who{
+ padding: 30px;
+   font-style: italic;
+   font-size: 20px;
+   
+   text-align: center;
+   
+
+	}
+	.who3{
+padding: 30px;
+   font-style: italic;
+   font-size: 20px;
+   
+   text-align: center;
+	}
+	.who1{
+font-style: italic;
+   font-size: 20px;
+   
+   text-align: center;
+	}
+	.who2{
+		 font-style: italic;
+padding-top: 20px;
+   font-size: 20px;
+   text-align: center;
+   
+	}
+	
+	#section3 {padding-top:50px;height:250px;background-color: #696969;}
+	 #section41 {padding-top:50px;height:600px;color: black; background-color: #DCDCDC;
+}
+	.instart{
+    color:whitesmoke;
+    font-size:20px;
+    padding-top:100px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  .instart2{
+    color:whitesmoke;
+    font-size:14px;
+   
+    text-align: center;
+  }
+  .butup{
+    background-color:whitesmoke;
+    color:forestgreen;
+    font-size:15px;
+    margin-top:20px;
+  }
+	
+ }
+ @media (min-width: 992px)
+  { 
+
+#section3 {padding-top:50px;height:600px;}
+.who{
+
+ font-style: italic;
+padding-top: 55px;
+   font-size: 50px;
+   text-align: center;
+   
+  
+
+	}
+	.who3{
+		 font-style: italic;
+padding-top: 20px;
+   font-size: 50px;
+   text-align: center;
+   
+	}
+	.who1{
+	font-style: italic;
+   font-size: 35px;
+   
+   text-align: center;
+	}
+	.who2{
+		 font-style: italic;
+padding-top: 30px;
+   font-size: 35px;
+   text-align: center;
+   
+	}
+  .percentage{
+    color:forestgreen;
+    font-size: 55px;
+  }
+	
+ #section41 {padding-top:50px;height:750px;color: black; background-color: #DCDCDC;
+}
+	.instart{
+    color:whitesmoke;
+    font-size:45px;
+    padding-top:125px;
+    text-align: center;
+  }
+  .instart2{
+    color:whitesmoke;
+    font-size:35px;
+    padding:30px;
+    text-align: center;
+  }
+  .butup{
+    background-color:whitesmoke;
+    color:forestgreen;
+    font-size:25px;
+    margin-top:35px;
+  }
+  .space{
+
+padding:15px;
+
+      }
+   }
+
+
+
+
+			
+			#section1 {padding-top:50px;height:700px;color: black; background-color: #F5FFFA;
+	}
+  #section2 {padding-top:50px;height:600px;color: black; background-color: #98FB98;}
+  
+ 
+  #section42 {padding-top:50px;height:500px;color: #fff; background-color: #F0FFF0;
+  background-image: url(http://wallpapercave.com/wp/CzGHDay.jpg);
+  background-position: center ;
+   background-size: cover;  
+           background-attachment: fixed;
+           background-position: center center;
+           background-repeat: no-repeat;
+           height:600px;
+           width: 100%;
+           background-color: black;
+           opacity: 1;
+  
+			}
+  #section5 {height:150px;color: #F0FFF0; background-color:#696969;opacity:1}
+			
+      
+>>>>>>> 8975246dc984f3e33782c89937a63c88f919eccd

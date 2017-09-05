@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  <div class="container">
     
     
@@ -85,4 +86,93 @@
  <div *ngIf="submitted">
        <h4> registration successful</h4>
      
+=======
+ <div class="container">
+    
+    
+  
+    <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)" *ngIf="!submitted" novalidate>
+      <h2>Register Form</h2>
+        <div class="col-xs-5">
+        <div class="form-group">
+        
+            <label>Name</label>
+            
+            <input type="text" #nameRef="ngModel" maxlength="15" minlength="4" pattern="[a-z]+" required class="form-control" name="name" ngModel>
+            </div> <!--<div [hidden]="nameRef.valid || nameRef.pristine" class="alert alert-danger">
+        Please enter a name
+    </div>-->
+      <div *ngIf="nameRef.errors && (nameRef.dirty|| nameRef.touched)" class=" alert alert-danger">
+          <div [hidden]="!nameRef.errors.required">
+              Please enter a name
+          </div>
+          <div [hidden]="!nameRef.errors.minlength">
+              Please enter atleast four characters
+          </div>
+             <div [hidden]="!nameRef.errors.pattern">
+              Please enter valid name
+          </div>
+      </div>
+        
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" #refEmail="ngModel" required pattern="[a-z]+@[a-z]+\.(com|co.in)" class="form-control" name="email" ngModel>
+            <div *ngIf="refEmail.errors && (refEmail.dirty||refEmail.touched)" class="alert alert-danger">
+          <div [hidden]="!refEmail.errors.required">
+              Please enter an email
+          </div>
+          <div [hidden]="!refEmail.errors.pattern">
+              Please enter valid email
+          </div>
+            </div>
+            
+             
+          </div>
+        
+        <div ngModelGroup="address">
+             <div class="form-group">
+            <label>Street</label>
+            <input type="text" #refStreet="ngModel" required class="form-control" name="street" ngModel>
+         <div *ngIf="refStreet.errors && (refStreet.dirty|| refStreet.touched)" class="alert alert-danger">
+          <div [hidden]="!refStreet.errors.required">
+              Please enter street
+          </div>
+         
+      </div>
+        </div>
+        <div class="form-group">
+            <label>City</label>
+            <input type="text" #refCity="ngModel" required class="form-control" name="city" ngModel>
+            <div *ngIf="refCity.errors && (refCity.dirty|| refCity.touched)" class="alert alert-danger">
+          <div [hidden]="!refCity.errors.required">
+              Please enter City
+          </div>
+         
+      </div>
+        </div>
+        <div class="form-group">
+            <label>Postalcode</label>
+            <input type="text" #refPin="ngModel" required pattern="^[1-9][0-9]{4}$" class="form-control" name="postalcode" ngModel>
+            <div *ngIf="refPin.errors && (refPin.dirty|| refPin.touched)" class="alert alert-danger">
+                <div [hidden]="!refPin.errors.required">
+              Please enter a pin
+          </div>
+          <div [hidden]="!refPin.errors.pattern">
+              Please enter five digit number
+          </div>
+         
+            </div>
+        </div>
+        </div>
+       
+       <button [disabled]="!userForm.valid" type="submit" class="btn btn-primary">submit</button>
+       </div>
+    </form>
+
+    
+</div>
+ <div *ngIf="submitted">
+       <h4> registration successful</h4>
+     
+>>>>>>> 8975246dc984f3e33782c89937a63c88f919eccd
    </div>

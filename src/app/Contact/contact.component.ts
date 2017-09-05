@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,3 +9,15 @@ import { Component } from '@angular/core';
 export class ContactComponent {
   title = 'app works!';
 }
+=======
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'contact-root',
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.css']
+})
+export class ContactComponent {
+  title = 'app works!';
+}
+>>>>>>> 8975246dc984f3e33782c89937a63c88f919eccd
